@@ -9,37 +9,35 @@ import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
 
 
-function Contents() {
+export default function Contents() {
     // initialize state variable currentPage to indicate what section a user is on, with default section being About Me
-    const [currentSection, setCurrentSection] = useState('About');
+    const [currentPage, setCurrentPage] = useState('About');
     
     // Identify which section to render
-    const renderSection = () => {
-        if (currentSection === 'Portfolio') {
+    const renderPage = () => {
+        if (currentPage === 'Portfolio') {
             return (<Portfolio />);
-        } else if (currentSection === 'Resume') {
+        } else if (currentPage === 'Resume') {
             return (<Resume />);
-        } else if (currentSection === 'Contact') {
+        } else if (currentPage === 'Contact') {
             return (<Contact />);
         } else 
             return (<About />);
     };
 
     // Change current page
-    const sectionChange = (section) => setCurrentSection(section);
+    const handlePageChange = (page) => setCurrentPage(page);
 
     return (
         <div>
             <header>
                 {/* Pass through currentSection & function to change currentSection to Navigation for dynamic us */}
-                <Navigation currentSection={currentSection} sectionChange={sectionChange} />
+                <Navigation currentPage={currentPage} sectionChange={handlePageChange} />
             </header>
             <main>
-                {renderSection()}
+                {renderPage()}
             </main>
             <Footer />
         </div>
     );
 }
-
-export default Contents;
