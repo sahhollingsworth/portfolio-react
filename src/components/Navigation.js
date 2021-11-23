@@ -32,7 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
                 </ul>
             </div>
         </nav>
-    );
+    )
 }
 
 export default Navigation;

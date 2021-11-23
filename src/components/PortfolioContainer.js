@@ -37,5 +37,5 @@ export default function PortfolioContainer() {
             </main>
             <Footer />
         </div>
-    );
+    )
 }
