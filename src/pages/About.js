@@ -1,5 +1,7 @@
 import React from 'react';
 import headshot from '../images/headshot_about.png'; 
+import { Na } from 'react-bootstrap';
+
 
 function About() {
     return (

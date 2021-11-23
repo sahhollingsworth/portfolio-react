@@ -2,7 +2,7 @@ import React from 'react';
 // Images for social media links
 import github from '../images/logo_github.png';
 import linkedIn from '../images/logo_linkedin.png';
-import medium from '../images/logo_ medium.png';
+import medium from '../images/logo_medium.png';
 
 function Footer() {
     return (
