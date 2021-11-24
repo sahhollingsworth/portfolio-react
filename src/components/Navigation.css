@@ -1,0 +1,15 @@
+#header-nav {
+    background-color: #FBC966;
+    font-weight: bolder;
+    /* Don't linebreak between words in an element*/ 
+    white-space: nowrap;
+}
+
+#brand {
+    color: #FB8974;
+    font-weight: bold;
+}
+
+.activated {
+    text-shadow: 2px 2px #90CEC7;
+}
