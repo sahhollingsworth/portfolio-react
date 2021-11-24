@@ -12,7 +12,6 @@ function Footer() {
     return (
         <footer className="text-center text-white">
             <div className="container p-2">
-                {/* Links  */}
                 <section className="mb-2">
                     <IconContext.Provider value={{ style: {height: "2em", width: "2em"}, className: "global-class-name" }}>
                         {/* Linkedin */}
@@ -32,12 +31,6 @@ function Footer() {
                         </a>
                     </IconContext.Provider>
                 </section>
-                {/* end Links  */}
-                {/* Copyright */}
-                <div className="text-center">
-                    <div>&copy; Sarah Hollingsworth 2021</div>
-                </div>
-                {/* end Copyright */}
             </div>
         </footer>
     )
