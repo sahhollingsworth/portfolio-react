@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 // Naviagtion and Footer are always rendered 
-import Navigation from './Navigation';
-import Footer from './Footer';
+import Navigation from './Navigation/Navigation';
+import Footer from './Footer/Footer';
 // All pages need to be imported for dynamic rendering
-import About from '../pages/About';
+import About from '../pages/About/About';
 import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
-import Contact from '../pages/Contact';
+import Contact from '../pages/Contact/Contact';
 
 
 export default function Header() {

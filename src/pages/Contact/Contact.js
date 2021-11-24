@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Import helper function for email input validation in form
-import { validateEmail, completeField } from '../utils/formValidation';
+import { validateEmail, completeField } from '../../utils/formValidation';
 import { Form, Button, Container} from 'react-bootstrap';
 import './Contact.css';
 

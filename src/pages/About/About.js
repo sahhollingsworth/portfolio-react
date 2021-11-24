@@ -1,5 +1,5 @@
 import React from 'react';
-import headshot from '../images/headshot_about.png';
+import headshot from '../../images/headshot_about.png';
 import { Container} from 'react-bootstrap';
 import './About.css';
 
