@@ -1,8 +1,8 @@
 import React from 'react';
 import resumePDF from '../../images/sarah_hollingsworth_resume_2021-11.pdf';
+import { Skill } from './Skill';
 import { Container, Button, ListGroup } from 'react-bootstrap'; 
 import './Resume.css';
-import { Skill } from './Skill';
 
 // Languages, Libraries, and Packages
 const languages = [
@@ -95,8 +95,8 @@ function Resume() {
                     <h4>Language</h4>
                     <ListGroup className="list-group-flush">
                         {
-                            languages.map((name) => (
-                                <Skill name={skill.name} />
+                            languages.map((language) => (
+                                <Skill name={language.name} />
                             ))
                         }
                     </ListGroup>
@@ -106,8 +106,8 @@ function Resume() {
                     <h4>Database</h4>
                     <ListGroup className="list-group-flush">
                         {
-                            databases.map((name) => (
-                                <Skill name={skill.name} />
+                            databases.map((database) => (
+                                <Skill name={database.name} />
                             ))
                         }
                     </ListGroup>
@@ -117,8 +117,8 @@ function Resume() {
                     <h2>Technology</h2>
                     <ListGroup className="list-group-flush">
                         {
-                            technologies.map((name) => (
-                                <Skill name={skill.name} />
+                            technologies.map((technology) => (
+                                <Skill name={technology.name} />
                             ))
                         }
                     </ListGroup>
