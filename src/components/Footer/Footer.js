@@ -16,17 +16,14 @@ function Footer() {
                     <IconContext.Provider value={{ style: {height: "2em", width: "2em"}, className: "global-class-name" }}>
                         {/* Linkedin */}
                         <a className="btn btn-floating m-1" role="button" href="https://www.linkedin.com/in/sarahhollingsworth/" target="_blank" rel="noreferrer">
-                            {/* <img src={linkedIn} alt="LinkedIn logo" className="img-thumbnail"/> */}
                             <FaLinkedin />
                         </a>
                         {/* Github  */}
                         <a className="btn btn-floating m-1" role="button" href="https://github.com/sahhollingsworth" target="_blank" rel="noreferrer">
-                            {/* <img src={github} alt="Github logo" className="img-thumbnail"/> */}
                             <BsGithub />
                         </a>
                         {/* Medium */}
                         <a className="btn btn-floating m-1" role="button" href="https://medium.com/@sarahholli" target="_blank" rel="noreferrer">
-                            {/* <img src={medium} alt="Medium blogsite logo" className="img-thumbnail"/> */}
                             <FaMedium />
                         </a>
                     </IconContext.Provider>
