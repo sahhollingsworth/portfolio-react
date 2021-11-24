@@ -1,10 +1,8 @@
 import React from 'react';
 import resumePDF from '../../images/sarah_hollingsworth_resume_2021-11.pdf';
-import { Container, Button } from 'react-bootstrap'; 
+import { Container, Button, ListGroup } from 'react-bootstrap'; 
 import './Resume.css';
-// import Skill from './Skill';
-
-// create skills to pass through to skill function?
+import { Skill } from './Skill';
 
 // Languages, Libraries, and Packages
 const languages = [
@@ -89,41 +87,46 @@ const databases = [
 function Resume() {
     return (
         <Container className="py-4">
+            {/* containter for skills lists */}
             <div className="row py-2">
                 <h3>Experience</h3>
+                {/* render list of languages developer has experience with */}
                 <div className="col-md-4">
                     <h4>Language</h4>
-                    <ul className="list-group list-group-flush">
+                    <ListGroup className="list-group-flush">
                         {
                             languages.map((name) => (
                                 <Skill name={skill.name} />
                             ))
                         }
-                    </ul>
+                    </ListGroup>
                 </div>
+                {/* render list of database technologies developer has experience with */}
                 <div className="col-md-4">
                     <h4>Database</h4>
-                    <ul className="list-group list-group-flush">
+                    <ListGroup className="list-group-flush">
                         {
                             databases.map((name) => (
                                 <Skill name={skill.name} />
                             ))
                         }
-                    </ul>
+                    </ListGroup>
                 </div>
+                {/* render list of technologies developer has experience with */}
                 <div className="col-md-4">
                     <h2>Technology</h2>
-                    <ul className="list-group list-group-flush">
+                    <ListGroup className="list-group-flush">
                         {
                             technologies.map((name) => (
                                 <Skill name={skill.name} />
                             ))
                         }
-                    </ul>
+                    </ListGroup>
                 </div>
             </div>
+            {/* end skills lists container */}
             <div className="row py-2" id="container-btn-resume">
-                <a href={resumePDF} target="_blank" rel="noreferrer">
+                <a href={resumePDF}>
                     <Button id="btn-resume">DOWNLOAD RESUME</Button>
                 </a>
             </div>
