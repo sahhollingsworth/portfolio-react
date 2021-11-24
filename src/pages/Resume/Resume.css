@@ -1,0 +1,13 @@
+#btn-resume {
+    background-color: #90CEC7;
+    border: none;
+    color: #FB8974;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#container-btn-resume {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}

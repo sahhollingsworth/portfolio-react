@@ -1,6 +1,8 @@
 import React from 'react';
-// import resumePDF from '../images/sarah_hollingsworth_resume_2021-11.pdf.pdf'; 
-// import Skill from '../components/Skill';
+import resumePDF from '../../images/sarah_hollingsworth_resume_2021-11.pdf';
+import { Container, Button } from 'react-bootstrap'; 
+import './Resume.css';
+// import Skill from './Skill';
 
 // create skills to pass through to skill function?
 
@@ -86,9 +88,24 @@ import React from 'react';
 
 function Resume() {
     return (
-        <div>
-            <p>Resume placeholder text</p>
-        </div>
+        <Container className="py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Language</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2>Databases</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2>Technologies</h2>
+                </div>
+            </div>
+            <div class="row" id="container-btn-resume">
+                <a href={resumePDF} target="_blank" rel="noreferrer">
+                    <Button id="btn-resume">DOWNLOAD RESUME</Button>
+                </a>
+            </div>
+        </Container>
     );
 
 }
