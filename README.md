@@ -1,11 +1,11 @@
 # Sarah Hollingsworth React Portfolio
-tbd
+This portfolio serves as a brief overview of my development experience, including major projects and skills. It also serves as an avenue to learn more about me or contact me directly. This was created as a React app to continue to build experience and familiarity with the React framework given it's commonality in modern websites.
 
 ## Summary
 [Click here to visit my React portfolio.](https://sahhollingsworth.github.io/portfolio-react/)
 
 ### Home Page / About Me section 
-![Image of Homepage/About Me page of Portfolio app](./public/images/screenshot_aboutme.png.jpg)
+![Image of Homepage/About Me page of Portfolio app](./public/images/screenshot_aboutme.png)
 
 * The About Me title and section are selected by default on page load.
 * The header includes my name and a page navigation with titles corresponding to different sections of the portfolio.
