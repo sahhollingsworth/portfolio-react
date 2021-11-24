@@ -16,19 +16,10 @@ const languages = [
         name: "JWT"
     },
     {
-        name: "Express"
-    },
-    {
-        name: "Apollo Client"
-    },
-    {
         name: "Javascript"
     },
     {
         name: "JSX"
-    },
-    {
-        name: "Node"
     },
     {
         name: "React"
@@ -67,7 +58,13 @@ const technologies = [
         name: "REST APIs"
     },
     {
-        name: "Insomnia"
+        name: "Express"
+    },
+    {
+        name: "Apollo Client"
+    },
+    {
+        name: "Node"
     }
 ]
 
@@ -86,12 +83,12 @@ const databases = [
 
 function Resume() {
     return (
-        <Container className="py-4">
+        <Container className="py-4 text-center">
             {/* containter for skills lists */}
-            <div className="row py-2">
-                <h3>Experience</h3>
+            <h3 className="display-6 py-2">Experience</h3>
+            <div className="row py-3 justify-content-around">
                 {/* render list of languages developer has experience with */}
-                <div className="col-md-4">
+                <div className="col-md-3 mx-1">
                     <h4>Language</h4>
                     <ListGroup className="list-group-flush">
                         {
@@ -102,7 +99,7 @@ function Resume() {
                     </ListGroup>
                 </div>
                 {/* render list of database technologies developer has experience with */}
-                <div className="col-md-4">
+                <div className="col-md-3 mx-1">
                     <h4>Database</h4>
                     <ListGroup className="list-group-flush">
                         {
@@ -113,8 +110,8 @@ function Resume() {
                     </ListGroup>
                 </div>
                 {/* render list of technologies developer has experience with */}
-                <div className="col-md-4">
-                    <h2>Technology</h2>
+                <div className="col-md-3 mx-1">
+                    <h4>Technology</h4>
                     <ListGroup className="list-group-flush">
                         {
                             technologies.map((technology) => (
