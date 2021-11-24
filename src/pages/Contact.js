@@ -29,17 +29,17 @@ function Contact() {
     const handleFormSubmit = (e) => {
         // Preventing the default form submit behavior of refreshing the page
         e.preventDefault()
-
-            // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email)) {
-        setErrorMessage('It looks like you entered an invlad email address, please try again.');
-        // Exit code block to allow user to correct invalid email
-        return;
-    }
-    if (!completeField(name) || !completeField(email) || !completeField(message)) {
-        setErrorMessage('Please complete all fields');
-        return;
-    }
+        // Validate that a user has responded to all form inputs
+        if (!completeField(name) || !completeField(email) || !completeField(message)) {
+            setErrorMessage('Please complete all fields');
+            return;
+        }
+        // Validate that email address is an email address
+        if (!validateEmail(email)) {
+            setErrorMessage('Please enter a valid email address');
+            // Exit code block to allow user to correct invalid email
+            return;
+        }
     alert(`Mission accomplished`);
 
     // Clear all input contents upon form submission
@@ -87,14 +87,14 @@ function Contact() {
                         placeholder="Enter your Message"
                     />
                 </Form.Group>
+                {errorMessage && (
+                <div>
+                    <p className="error-text py-2">{errorMessage}</p>
+                </div>
+                )}
                 <Button variant="primary" type="submit" onClick={handleFormSubmit}>
                     Send
                 </Button>
-                {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-                )}
             </Form>
         </section>
     );
