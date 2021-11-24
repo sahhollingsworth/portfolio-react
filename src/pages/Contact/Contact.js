@@ -91,7 +91,7 @@ function Contact() {
                 </div>
                 )}
                 <div id="container-btn-contact">
-                    <Button type="submit" onClick={handleFormSubmit} id="btn-contact">
+                    <Button type="submit" onClick={handleFormSubmit} id="btn-contact" className="fs-6">
                         SEND
                     </Button>
                 </div>
