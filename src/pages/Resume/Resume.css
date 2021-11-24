@@ -12,10 +12,19 @@
     text-align: center;
 }
 
+h3 {
+    color: #FB8974;
+}
+
 h4 {
     color: #90CEC7;
 }
 
 .skill-item {
-    border-color: #FBC966;
+    /* Don't linebreak between words in an element*/ 
+    white-space: nowrap;
+}
+
+.skill-group {
+    border-color: #FB8974;
 }

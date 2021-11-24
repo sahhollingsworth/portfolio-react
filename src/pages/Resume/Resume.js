@@ -25,6 +25,9 @@ const languages = [
         name: "React"
     },
     {
+        name: "Python"
+    },
+    {
         name: "JSON"
     },
     {
@@ -89,8 +92,8 @@ function Resume() {
             <div className="row py-3 justify-content-around">
                 {/* render list of languages developer has experience with */}
                 <div className="col-md-3 mx-1">
-                    <h4>Language</h4>
-                    <ListGroup className="list-group-flush">
+                    <h4 className="py-1 font-weight-bold">LANGUAGE</h4>
+                    <ListGroup className="list-group-flush skill-group">
                         {
                             languages.map((language) => (
                                 <Skill name={language.name} />
@@ -100,8 +103,8 @@ function Resume() {
                 </div>
                 {/* render list of database technologies developer has experience with */}
                 <div className="col-md-3 mx-1">
-                    <h4>Database</h4>
-                    <ListGroup className="list-group-flush">
+                    <h4 className="py-1 font-weight-bold">DATABASE</h4>
+                    <ListGroup className="list-group-flush skill-group">
                         {
                             databases.map((database) => (
                                 <Skill name={database.name} />
@@ -111,8 +114,8 @@ function Resume() {
                 </div>
                 {/* render list of technologies developer has experience with */}
                 <div className="col-md-3 mx-1">
-                    <h4>Technology</h4>
-                    <ListGroup className="list-group-flush">
+                    <h4 className="py-1 font-weight-bold">TECHNOLOGY</h4>
+                    <ListGroup className="list-group-flush skill-group">
                         {
                             technologies.map((technology) => (
                                 <Skill name={technology.name} />
