@@ -1,0 +1,12 @@
+#btn-contact {
+    background-color: #90CEC7;
+    border: none;
+    color: #FB8974;
+    font-weight: bold;
+}
+
+#container-btn-contact {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}

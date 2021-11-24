@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 // Import helper function for email input validation in form
 import { validateEmail, completeField } from '../utils/formValidation';
-import { Form, Button} from 'react-bootstrap';
+import { Form, Button, Container} from 'react-bootstrap';
+import './Contact.css';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -49,8 +50,8 @@ function Contact() {
     };
 
     return (
-        <section>
-            <Form>
+        <Container className="py-4">
+            <Form className="col-lg-8 offset-lg-2">
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Name</Form.Label>
                     {/* <Form.Control type="password" placeholder="Password" /> */}
@@ -59,7 +60,7 @@ function Contact() {
                         name="name"
                         onChange={handleInputChange}
                         type="name"
-                        placeholder="name"
+                        placeholder="Franz"
                     />
                 </Form.Group>
 
@@ -71,7 +72,7 @@ function Contact() {
                         name="email"
                         onChange={handleInputChange}
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="fshubert@gmail.com"
                     />
                 </Form.Group>
 
@@ -84,7 +85,7 @@ function Contact() {
                         value={message}
                         name="message"
                         onChange={handleInputChange}
-                        placeholder="Enter your Message"
+                        placeholder="Hello World"
                     />
                 </Form.Group>
                 {errorMessage && (
@@ -92,11 +93,13 @@ function Contact() {
                     <p className="error-text py-2">{errorMessage}</p>
                 </div>
                 )}
-                <Button variant="primary" type="submit" onClick={handleFormSubmit}>
-                    Send
-                </Button>
+                <div id="container-btn-contact">
+                    <Button type="submit" onClick={handleFormSubmit} id="btn-contact">
+                        SEND
+                    </Button>
+                </div>
             </Form>
-        </section>
+        </Container>
     );
 }
 
