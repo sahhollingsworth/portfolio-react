@@ -54,7 +54,6 @@ function Contact() {
             <Form className="col-lg-8 offset-lg-2">
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Name</Form.Label>
-                    {/* <Form.Control type="password" placeholder="Password" /> */}
                     <Form.Control
                         value={name}
                         name="name"
@@ -66,7 +65,6 @@ function Contact() {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    {/* <Form.Control type="email" placeholder="Enter email" /> */}
                     <Form.Control 
                         value={email}
                         name="email"
@@ -78,7 +76,6 @@ function Contact() {
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Message</Form.Label>
-                    {/* <Form.Control as="textarea" rows={3} /> */}
                     <Form.Control 
                         as="textarea" 
                         rows={3} 
