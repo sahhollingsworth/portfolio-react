@@ -7,10 +7,14 @@
 
 #brand {
     color: #FB8974;
-    font-weight: bold;
+    /* font-weight: bold; */
+    /* letter-spacing: 1px; */
+}
+
+#nav-pages {
+    letter-spacing: 1px;
 }
 
 .activated {
-    text-shadow: 2px 2px #90CEC7;
-    font-size: larger;
+    text-shadow: 2px 4px #90CEC7;
 }

@@ -4,9 +4,9 @@ import './Navigation.css';
 
 function Navigation({ currentPage, handlePageChange }) {
     return (
-        <Navbar id="header-nav" className="justify-content-between flex-wrap py-3">
+        <Navbar id="header-nav" className="justify-content-between flex-wrap py-3 toggle-justify">
                 <h1 className="display-3 px-4" id="brand">SARAH HOLLINGSWORTH</h1>
-                <Nav className="px-3">
+                <Nav className="px-3 fs-6" id="nav-pages">
                     <Nav.Link href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'activated px-3' : 'inactive px-3'}>
                         ABOUT ME
                     </Nav.Link>
