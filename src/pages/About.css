@@ -1,0 +1,8 @@
+#headshot {
+    box-shadow: 8px 8px #FB8974, -8px -8px #90CEC7;
+    border:none;
+}
+
+#about-desc {
+    line-height: 1.6;
+}
