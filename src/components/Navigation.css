@@ -13,3 +13,7 @@
 .activated {
     text-shadow: 2px 2px #90CEC7;
 }
+
+@media screen and (max-width: 1187px) {
+
+}
