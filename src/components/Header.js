@@ -9,7 +9,7 @@ import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
 
 
-export default function PortfolioContainer() {
+export default function Header() {
     // initialize state variable currentPage to indicate what section a user is on, with default section being About Me
     const [currentPage, setCurrentPage] = useState('About');
     
