@@ -5,7 +5,7 @@ import './Resume.css';
 // each skill is rendered as a list item in a ul in Resume.js jsx
 export function Skill(props) {
     return (
-        <ListGroup.Item className="skill-item">
+        <ListGroup.Item id="skill-item">
             {props.name}
         </ListGroup.Item>
     )
