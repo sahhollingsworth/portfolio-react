@@ -8,49 +8,64 @@ import projEmployeeTracker from '../../images/projects/employee-tracker-screensh
 import projNotetaker from '../../images/projects/notetaker_screenshot.png';
 import projReadmeGen from '../../images/projects/readme-generator_screenshot.png';
 import projWorkdayScheduler from '../../images/projects/workday-scheduler_screenshot.png';
+import { Container } from 'react-bootstrap';
 
 const projects = [
     {
         name: 'Budget Tracker',
-        prod_link: 'https://budget-tracker-211115.herokuapp.com/',
-        repo_link: 'https://github.com/sahhollingsworth/budget-tracker',
+        image: projBudgetTracker,
+        production: 'https://budget-tracker-211115.herokuapp.com/',
+        repository: 'https://github.com/sahhollingsworth/budget-tracker',
     },
     {
         name: 'Celebrity Showdown',
-        prod_link: 'https://powerful-badlands-23075.herokuapp.com/',
-        repo_link: 'https://github.com/sahhollingsworth/celebrity-showdown',
+        image: projCelebrityShowdown,
+        production: 'https://powerful-badlands-23075.herokuapp.com/',
+        repository: 'https://github.com/sahhollingsworth/celebrity-showdown',
     },
     {
         name: 'Workout Tracker',
-        prod_link: 'https://workout-tracker-211115.herokuapp.com/',
-        repo_link: 'https://github.com/sahhollingsworth/workout-tracker',
+        image: projWorkoutTracker,
+        production: 'https://workout-tracker-211115.herokuapp.com/',
+        repository: 'https://github.com/sahhollingsworth/workout-tracker',
     },
     {
         name: 'Employee Tracker',
-        repo_link: 'https://github.com/sahhollingsworth/employee-tracker',
+        image: projEmployeeTracker,
+        repository: 'https://github.com/sahhollingsworth/employee-tracker',
     },
     {
         name: 'Notetaker',
-        prod_link: 'https://sleepy-reef-64762.herokuapp.com/',
-        repo_link: 'https://github.com/sahhollingsworth/note-taker',
+        image: projNotetaker,
+        production: 'https://sleepy-reef-64762.herokuapp.com/',
+        repository: 'https://github.com/sahhollingsworth/note-taker',
     },
     {
         name: 'ReadMe Generator',
-        repo_link: 'https://github.com/sahhollingsworth/readme-generator',
+        image: projReadmeGen,
+        repository: 'https://github.com/sahhollingsworth/readme-generator',
     },
     {
         name: 'Workday Scheduler',
-        prod_link: 'https://sahhollingsworth.github.io/workday-scheduler/',
-        repo_link: 'https://github.com/sahhollingsworth/workday-scheduler',
+        image: projWorkdayScheduler,
+        production: 'https://sahhollingsworth.github.io/workday-scheduler/',
+        repository: 'https://github.com/sahhollingsworth/workday-scheduler',
     },
 ]
 
 
 function Portfolio() {
     return (
-        <div>
-            <p>portfolio placeholder text</p>
-        </div>
+        <Container>
+            {projects.map((project) => (
+                <Project
+                    name = {project.name}
+                    image = {project.image}
+                    prod = {project.production}
+                    repo = {project.repository}
+                />
+            ))}
+        </Container>
     );
 
 }
