@@ -4,7 +4,7 @@ import Navigation from './Navigation/Navigation';
 import Footer from './Footer/Footer';
 // All pages need to be imported for dynamic rendering
 import About from '../pages/About/About';
-import Portfolio from '../pages/Portfolio';
+import Portfolio from '../pages/Portfolio/Portfolio';
 import Resume from '../pages/Resume/Resume';
 import Contact from '../pages/Contact/Contact';
 
