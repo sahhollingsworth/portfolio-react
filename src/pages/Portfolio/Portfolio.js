@@ -9,6 +9,7 @@ import projNotetaker from '../../images/projects/notetaker_screenshot.png';
 import projReadmeGen from '../../images/projects/readme-generator_screenshot.png';
 import projWorkdayScheduler from '../../images/projects/workday-scheduler_screenshot.png';
 import { Container } from 'react-bootstrap';
+import './Portfolio.css';
 
 const projects = [
     {
@@ -56,16 +57,18 @@ const projects = [
 
 function Portfolio() {
     return (
-        <Container>
-            {projects.map((project) => (
-                <Project
-                    name = {project.name}
-                    image = {project.image}
-                    prod = {project.production}
-                    repo = {project.repository}
-                />
-            ))}
-        </Container>
+        <div className="m-3 px-4">
+            <div className= "py-4 d-flex flex-wrap justify-content-center">
+                {projects.map((project) => (
+                    <Project
+                        name = {project.name}
+                        image = {project.image}
+                        prod = {project.production}
+                        repo = {project.repository}
+                    />
+                ))}
+            </div>
+        </div>
     );
 
 }
