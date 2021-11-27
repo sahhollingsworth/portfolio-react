@@ -8,7 +8,6 @@ import projEmployeeTracker from '../../images/projects/employee-tracker-screensh
 import projNotetaker from '../../images/projects/notetaker_screenshot.png';
 import projReadmeGen from '../../images/projects/readme-generator_screenshot.png';
 import projWorkdayScheduler from '../../images/projects/workday-scheduler_screenshot.png';
-import { Container } from 'react-bootstrap';
 import './Portfolio.css';
 
 const projects = [

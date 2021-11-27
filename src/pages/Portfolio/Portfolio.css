@@ -1,14 +1,41 @@
-.project-cards {
+.project-card {
     box-shadow: 8px 8px #FB8974, -8px -8px #90CEC7;
     border-color: white;
 }
 
-.button-repository {
-    border-color: #90CEC7;
+.project-title {
+    /*invisible because opacity is 0*/
     font-weight: bold;
 }
 
-.button-production {
+.button-project {
     border-color: #90CEC7;
+    color: #90CEC7;
     font-weight: bold;
+    /*invisible because opacity is 0*/
+    /* opacity: 0;            
+    transition: 0.4s; */
+}
+
+.project-details {
+    height: 100%;
+    opacity: 0;            
+    transition: 0.4s;
+    background: rgb(255,255,255);
+    background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(144,206,199,1) 100%);
+}
+
+.project-card:hover .project-details {
+    /*becomes visible on hover*/ 
+    opacity: .9; 
+}
+
+.project-card:hover .project-title {
+    /*becomes visible on hover*/ 
+    opacity: 1; 
+}
+
+.project-card:hover .button-project {
+    /*becomes visible on hover*/ 
+    opacity: 1;   
 }
