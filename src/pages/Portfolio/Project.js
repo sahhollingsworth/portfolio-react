@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, ButtonGroup } from 'react-bootstrap';
 import './Portfolio.css';
 
 function Project(props) {
@@ -8,15 +8,11 @@ function Project(props) {
             <Card.Img src={props.image} alt="Project image" />
             <Card.ImgOverlay>
                 <div className="project-details p-2">
-                    <Card.Title className="project-title display-4">{props.name}</Card.Title>
-                    {/* <a href={props.repository} target='_blank' rel='noreferrer'>
-                        <Button className='px-1 mx-1 button-project btn-primary-outline'>Repository</Button>
-                    </a> */}
-                    <Button className='px-1 mx-1 button-project btn-primary-outline' href={props.repository} target='_blank'>Repository</Button>
-                    <Button className='px-1 mx-1 button-project btn-primary-outline' href={props.production} target='_blank'>Deployed App</Button>
-                    {/* <a href={props.production} target='_blank' rel='noreferrer'>
-                        <Button className='px-1 mx-1 button-project btn-primary-outline'>Deployed App</Button>
-                    </a> */}
+                    <Card.Title className="project-title display-5 pl-3 ml-2">{props.name}</Card.Title>
+                    <ButtonGroup vertical className="pt-2">
+                        <Button className='pl-3 mx-1 py-2 my-2 button-project btn-primary-outline' href={props.repository} target='_blank' variant="outline-light" size="lg">Repository</Button>
+                        <Button className='pl-3 mx-1 py-2 my-2 button-project btn-primary-outline' href={props.production} target='_blank' variant="outline-light" size="lg">Deployed App</Button>
+                    </ButtonGroup>
                 </div>
             </Card.ImgOverlay>
         </Card>

@@ -1,20 +1,18 @@
 .project-card {
     box-shadow: 8px 8px #FB8974, -8px -8px #90CEC7;
-    border-color: white;
+    border: none;
 }
 
 .project-title {
     /*invisible because opacity is 0*/
-    font-weight: bold;
+    font-weight: bold !important;
+    color: #FFFFFF;
 }
 
 .button-project {
-    border-color: #90CEC7;
-    color: #90CEC7;
-    font-weight: bold;
-    /*invisible because opacity is 0*/
-    /* opacity: 0;            
-    transition: 0.4s; */
+    font-weight: bold !important;
+    border-width: 3px !important;
+    color: #1C1C1C
 }
 
 .project-details {
@@ -27,7 +25,7 @@
 
 .project-card:hover .project-details {
     /*becomes visible on hover*/ 
-    opacity: .9; 
+    opacity: .95; 
 }
 
 .project-card:hover .project-title {
